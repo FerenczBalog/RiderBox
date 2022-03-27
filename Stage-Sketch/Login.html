@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+		<title>Stage skecth - Login</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stylesheet login.css">
+		<link rel="stylesheet" href="ResetCss.css">
+
+	</head>
+
+	<header>
+
+		<nav class="navigation">
+		</nav>
+		</div>
+	</header>
+
+	<!-- FORM -->
+	<form  class="loginform" style="padding: 15rem 0 0 15rem; width: 20rem;">
+		<label for="username" style="color: white;">Username:</label>
+		<input type="text" name="username" id="usrnme" placeholder="Username">
+	
+		<label for="Password" style="color: white;">Password:</label>
+		<input type="password" name="password" id="pswd" placeholder="Password">
+
+		<input type="submit" name="login" value="Login" onclick="validate()">
+	</form>
+
+<script>
+
+function validate()
+{
+	var username = document.getElementById("usrnme").value;
+	var password = document.getElementById("pswd").value;
+	if(username == "Ferike" && password == "Puck2018")
+	{
+		open("/INDEX.html")
+	}
+	
+}
+
+validate();
+
+</script>
+
+</html>
